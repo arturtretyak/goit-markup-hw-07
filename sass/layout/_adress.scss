@@ -1,0 +1,19 @@
+.address {
+  font-style: normal;
+  color: var(--half-transparent-color);
+}
+
+.address-company {
+  color: white;
+}
+
+.address a {
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-func-cubic);
+  transition-property: color;
+}
+
+.address a:hover,
+.address a:focus {
+  color: var(--blue-color);
+}

@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--background-color-basic);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-item:last-child {
+  margin-left: auto;
+}
+
+.list-address li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-display {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-block-social {
+  margin-left: 70px;
+}
+
+.footer-soc-link {
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}

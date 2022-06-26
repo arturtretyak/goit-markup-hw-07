@@ -1,0 +1,48 @@
+.header {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  border-bottom: solid 1px #ececec;
+}
+
+.header .logo {
+  margin-right: 95px;
+}
+
+.contacts-header {
+  margin-left: auto;
+}
+
+.contacts-header-items {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-header-items .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-func-cubic);
+  transition-property: color;
+}
+
+.contacts-headers-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.icon-contacts-header {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact-header-content {
+}
+
+.contact-header-content:hover,
+.contact-header-content:focus {
+  color: var(--blue-color);
+}

@@ -1,0 +1,70 @@
+.check-political {
+  margin-bottom: 30px;
+  display: inline-block;
+  border: 2px solid black;
+  line-height: 0;
+  border-radius: 20%;
+}
+
+.check-link {
+  text-decoration-line: underline;
+  color: var(--blue-color);
+}
+
+.check-icon {
+  position: absolute;
+}
+
+/* .check-border {
+  display: inline-block;
+  border: 2px solid var(--black-color);
+} */
+
+.label-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.check {
+}
+
+.check-political + .check:checked {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.thumb-check {
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-privacy {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.check {
+  left: 25px;
+  top: 25px;
+}
+
+.check-icon {
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-func-cubic);
+  transition-property: opacity;
+}
+
+.check:not(:checked) + .label-check .thumb-check .check-icon {
+  opacity: 0;
+}
