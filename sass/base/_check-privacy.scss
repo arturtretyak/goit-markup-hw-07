@@ -1,9 +1,24 @@
-.check-political {
+.privacy {
+  position: relative;
   margin-bottom: 30px;
-  display: inline-block;
-  border: 2px solid black;
-  line-height: 0;
-  border-radius: 20%;
+}
+
+.privacy__check {
+  left: 25px;
+  top: 25px;
+
+  &:not(:checked) + .label-check .thumb-check .check-icon {
+    opacity: 0;
+  }
+
+  &:focus + .label-check .thumb-check {
+    border: 2px solid var(--blue-color);
+  }
+
+  .check-political + &:checked {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .check-link {
@@ -15,24 +30,11 @@
   position: absolute;
 }
 
-/* .check-border {
-  display: inline-block;
-  border: 2px solid var(--black-color);
-} */
-
 .label-check {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.check {
-}
-
-.check-political + .check:checked {
-  opacity: 0;
-  visibility: hidden;
 }
 
 .thumb-check {
@@ -48,26 +50,8 @@
   align-items: center;
 }
 
-.block-privacy {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.check {
-  left: 25px;
-  top: 25px;
-}
-
 .check-icon {
   transition-duration: 250ms;
   transition-timing-function: var(--time-func-cubic);
   transition-property: opacity;
-}
-
-.check:not(:checked) + .label-check .thumb-check .check-icon {
-  opacity: 0;
-}
-
-.check:focus + .label-check .thumb-check {
-  border: 2px solid var(--blue-color);
 }

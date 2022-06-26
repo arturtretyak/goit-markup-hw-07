@@ -1,13 +1,17 @@
-.nav-menu {
-  color: var(--black-color);
-  display: flex;
+.contacts-header {
+  margin-left: auto;
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 50px;
   }
 }
 
-.nav-menu__link {
+.contacts-header__content {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -20,6 +24,12 @@
 
   &:hover,
   &:focus {
+    fill: var(--blue-color);
     color: var(--blue-color);
   }
+}
+
+.contacts-header-items {
+  display: flex;
+  margin-left: auto;
 }
