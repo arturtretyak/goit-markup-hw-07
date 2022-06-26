@@ -1,19 +1,19 @@
 .address {
   font-style: normal;
   color: var(--half-transparent-color);
-}
 
-.address-company {
-  color: white;
-}
+  &__link {
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func-cubic);
+    transition-property: color;
+  }
 
-.address a {
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-func-cubic);
-  transition-property: color;
-}
+  &--company {
+    color: white;
+  }
 
-.address a:hover,
-.address a:focus {
-  color: var(--blue-color);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
 }

@@ -21,7 +21,7 @@
     <header class="header">
       <div class="container container--header">
         <a href="./index.html" class="link logo"
-          >Web<span class="logo-header-span">Studio</span></a
+          >Web<span class="logo logo--black">Studio</span></a
         >
         <nav>
           <ul class="list nav-menu">
@@ -132,7 +132,7 @@
 
       <section class="what-we-do-section section">
         <div class="container">
-          <h2 class="section-title">Чим ми займаемося</h2>
+          <h2 class="section__title">Чим ми займаемося</h2>
           <ul class="list card-set list-what-we-do">
             <li class="card-item what-we-do-item">
               <img
@@ -166,7 +166,7 @@
       </section>
       <section class="our-team-section section">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="list card-set">
             <li class="card-item card-employer">
               <img
@@ -428,7 +428,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="list card-set client-list">
             <li class="card-item">
               <a
@@ -516,13 +516,13 @@
       <div class="container footer-display">
         <div class="footer-contacts footer-item">
           <a href="/index.html" class="link logo"
-            >Web<span class="logo-white">Studio</span></a
+            >Web<span class="logo logo--white">Studio</span></a
           >
           <address class="address">
             <ul class="list list-address">
               <li>
                 <a
-                  class="link address-company"
+                  class="link address__link address--company"
                   href="https://goo.gl/maps/xmvjDF4cQr8UGCpK6"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -530,12 +530,14 @@
                 >
               </li>
               <li>
-                <a class="link" href="mailto:info@devstudio.com"
+                <a class="link address__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="link address__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -620,7 +622,9 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="title-order">Залиште ваші данні, ми Вам зателефонуємо</h2>
+        <h2 class="order-form-block__title">
+          Залиште ваші данні, ми Вам зателефонуємо
+        </h2>
         <form class="order-form">
           <label class="title-input" for="username">Ім'я</label>
           <div class="thumb-input">
@@ -631,7 +635,7 @@
               id="username"
               required
             />
-            <svg class="icon-input" width="18px" height="18px">
+            <svg class="icon__input" width="18px" height="18px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
@@ -644,7 +648,7 @@
               id="tel"
               required
             />
-            <svg class="icon-input" width="18px" height="18px">
+            <svg class="icon__input" width="18px" height="18px">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </div>
@@ -657,7 +661,7 @@
               id="email"
               required
             />
-            <svg class="icon-input" width="18px" height="18px">
+            <svg class="icon__input" width="18px" height="18px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>

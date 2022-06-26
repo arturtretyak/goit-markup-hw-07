@@ -16,19 +16,19 @@
   transition-duration: 250ms;
   transition-timing-function: var(--time-func-cubic);
   transition-property: background-color, fill;
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+    background-color: var(--blue-color);
+  }
 }
 
 .constructor-item {
   width: 45px;
   height: 45px;
-}
 
-.constructor-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.contructor-soc-link:hover,
-.contructor-soc-link:focus {
-  fill: var(--white-color);
-  background-color: var(--blue-color);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
