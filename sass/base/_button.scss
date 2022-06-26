@@ -11,7 +11,9 @@
   line-height: calc(30 / 16);
 
   margin: 0 auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding: 10px 30px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -27,4 +29,9 @@
 .button-to-order:hover,
 .button-to-order:focus {
   background-color: #188ce8;
+}
+
+.icon-send-btn {
+  fill: currentColor;
+  margin-left: 10px;
 }

@@ -44,7 +44,9 @@ img {
   font-size: 16px;
   line-height: 1.875;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding: 10px 30px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -58,6 +60,11 @@ img {
 .button-to-order:hover,
 .button-to-order:focus {
   background-color: #188ce8;
+}
+
+.icon-send-btn {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .card-set {
@@ -100,7 +107,6 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .check-political + .check:checked {
@@ -122,7 +128,7 @@ img {
 
 .block-privacy {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .check {
@@ -138,6 +144,10 @@ img {
 
 .check:not(:checked) + .label-check .thumb-check .check-icon {
   opacity: 0;
+}
+
+.check:focus + .label-check .thumb-check {
+  border: 2px solid var(--blue-color);
 }
 
 .close-button {
@@ -278,10 +288,6 @@ body {
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
-}
-
-.footer-email-form {
-  margin-left: 95px;
 }
 
 .form-email {
@@ -582,10 +588,6 @@ body {
 .footer-display {
   display: flex;
   align-items: baseline;
-}
-
-.footer-block-social {
-  margin-left: 70px;
 }
 
 .footer-soc-link {
