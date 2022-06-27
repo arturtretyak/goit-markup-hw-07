@@ -1,4 +1,4 @@
-.client-link {
+.client__link {
   width: 170px;
   height: 90px;
   display: flex;
@@ -12,14 +12,14 @@
   transition-duration: 250ms;
   transition-timing-function: var(--time-func-cubic);
   transition-property: border-color, fill;
+
+  &:hover,
+  &:focus {
+    fill: var(--blue-color);
+    border-color: var(--blue-color);
+  }
 }
 
 .client-list {
   --count-card: 6;
-}
-
-.client-link:hover,
-.client-link:focus {
-  fill: var(--blue-color);
-  border-color: var(--blue-color);
 }

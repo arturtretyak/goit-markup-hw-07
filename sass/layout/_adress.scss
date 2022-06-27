@@ -2,15 +2,15 @@
   font-style: normal;
   color: var(--half-transparent-color);
 
-  &__link {
-    transition-duration: 250ms;
-    transition-timing-function: var(--time-func-cubic);
-    transition-property: color;
-  }
-
   &--company {
     color: white;
   }
+}
+
+.address__link {
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-func-cubic);
+  transition-property: color;
 
   &:hover,
   &:focus {
