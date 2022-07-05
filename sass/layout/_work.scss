@@ -1,9 +1,9 @@
-.what-we-do-section {
-  padding-top: 0;
-}
+.work {
+  &__list {
+    --card-count: 4;
+  }
 
-.what-we-do {
-  --card-count: 4;
+  padding-top: 0;
   &__item {
     position: relative;
   }

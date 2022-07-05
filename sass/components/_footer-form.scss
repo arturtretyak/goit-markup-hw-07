@@ -29,3 +29,8 @@
 .email-form:not(:placeholder-shown) {
   color: var(--white-color);
 }
+
+.icon--send-btn {
+  fill: currentColor;
+  margin-left: 10px;
+}

@@ -1,6 +1,4 @@
-.benefit {
-  width: 270px;
-
+.benefits {
   &__title {
     font-size: 14px;
     font-weight: 700;
@@ -12,7 +10,7 @@
   }
 }
 
-.icon-benefits-block {
+.benefits__wraper {
   padding: 25px;
   display: flex;
   justify-content: center;
@@ -32,7 +30,7 @@
   }
 }
 
-.icon__benefits {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
